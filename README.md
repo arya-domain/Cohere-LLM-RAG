@@ -14,7 +14,7 @@ This project implements a Text Analysis System using LangChain, Cohere, Pinecone
 
 Try out the Text Analysis System in Google Colab:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/your-repo-name/blob/main/text_analysis_system.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/drive/1qqqcmUYEFahgWubBc7k3xsXsQ2WJN3xb?usp=sharing])
 
 ## Installation
 
