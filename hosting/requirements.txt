@@ -1,0 +1,6 @@
+langchain-cohere
+langchain
+langchain-core
+sentence-transformers
+pinecone-client==2.2.4
+gradio
