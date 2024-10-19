@@ -31,9 +31,9 @@ _Note_: Update the `Cohere_api` and `Pinecone_api` variables in the `Script` wit
 
 2. Load the Docker image:
 
-```bash
+   ```bash
    docker load -i ./hosting_image.tar
-```
+   ```
 
 3. Run the Docker container:
 
