@@ -1,4 +1,4 @@
-# Text Analysis System [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1qqqcmUYEFahgWubBc7k3xsXsQ2WJN3xb?usp=sharing)
+# Cohere RAG Based Chat [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1qqqcmUYEFahgWubBc7k3xsXsQ2WJN3xb?usp=sharing)
 
 This project implements a Text Analysis System using LangChain, Cohere, Pinecone, and Gradio. It allows users to upload various types of documents (PDF, CSV, Excel, TXT, MD, JSON) and ask questions about their content using natural language.
 
