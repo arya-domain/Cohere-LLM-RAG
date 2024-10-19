@@ -23,10 +23,10 @@ _Note_: Update the `Cohere_api` and `Pinecone_api` variables in the `Script` wit
 
 ## Run from Docker Image
 
-1. Download the Docker image from [Google Drive](https://drive.google.com/file/d/1-1ic3N-TJJeLDepEvOPQye6EKEQoshB8/) directly, or using `gdown`:
+1. Download the Docker image from [Google Drive](https://drive.google.com/file/d/1-1ic3N-TJJeLDepEvOPQye6EKEQoshB8/) directly, or using [gdown](https://github.com/wkentaro/gdown):
 
    ```bash
-   gdown https://drive.google.com/uc?id=1-1ic3N-TJJeLDepEvOPQye6EKEQoshB8
+   gdown 1-1ic3N-TJJeLDepEvOPQye6EKEQoshB8
    ```
 
 2. Load the Docker image:
@@ -41,7 +41,7 @@ _Note_: Update the `Cohere_api` and `Pinecone_api` variables in the `Script` wit
    docker run -d -p 7860:7860 --name hosting_container hosting
    ```
 
-## Installation and Usage for Local Setup
+## Installation for Local Setup
 
 To run this project locally, follow these steps:
 
