@@ -3,12 +3,14 @@ import pinecone
 import gradio as gr
 import time
 import logging
+from dotenv import load_dotenv
 from langchain.document_loaders import (
     PyPDFLoader,
     CSVLoader,
     TextLoader,
     UnstructuredExcelLoader,
 )
+from dotenv import load_dotenv
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_cohere import CohereEmbeddings, ChatCohere
 from langchain.vectorstores import Pinecone
@@ -32,14 +34,15 @@ def setup_logger(log_file: str, level=logging.INFO):
     return logger
 
 
+load_dotenv()
 logger = setup_logger("app.log")
 
 
 class TextAnalysisPipeline:
     def __init__(self):
         try:
-            self.cohere_api_key = "2VWYeENqn45Ktw3o8V5lFX7eBqOy6CkB3Lgo6nmf"
-            self.pinecone_api_key = "3ccb7171-c728-4334-aeae-c4bdc25c171a"
+            self.cohere_api_key = os.getenv("Cohere_api")
+            self.pinecone_api_key = os.getenv("Pinecone_api")
             self.pinecone_environment = "gcp-starter"
             self.index_name = "cohere"
 
@@ -228,4 +231,4 @@ iface = gr.Interface(
     description="Upload a file (PDF, CSV, Excel, TXT, MD, or JSON) and ask questions about its content. The system will automatically reset when a new file is uploaded.",
 )
 
-iface.launch(max_file_size="10mb", debug=True)
+iface.launch(max_file_size="10mb", debug=True, share=True)

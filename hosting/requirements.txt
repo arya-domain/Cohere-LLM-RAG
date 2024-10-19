@@ -4,3 +4,4 @@ langchain-core
 sentence-transformers
 pinecone-client==2.2.4
 gradio
+python-dotenv
